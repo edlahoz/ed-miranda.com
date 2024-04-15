@@ -1,0 +1,12 @@
+@use "../../variables.module";
+
+.Content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  border: 10px solid variables.$color-primary-text;
+  background: variables.$color-primary;
+  border-radius: 15px;
+}

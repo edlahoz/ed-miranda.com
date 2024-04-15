@@ -1,0 +1,21 @@
+@use "../../variables.module";
+
+.Navigation {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  li {
+    font-size: variables.$font-size-secondary;
+    color: variables.$color-primary;
+    padding: 5px;
+    text-transform: uppercase;
+  }
+  li:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}

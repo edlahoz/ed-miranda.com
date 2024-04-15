@@ -1,0 +1,15 @@
+$color-primary: #fff;
+$color-primary-text: #000;
+$color-secondary: #000;
+$color-secondary-text: #fff;
+$font-size-primary: 2rem;
+$font-size-secondary: 1.5rem;
+
+:export {
+  colorPrimary: $color-primary;
+  colorPrimaryText: $color-primary-text;
+  colorSecondary: $color-secondary;
+  colorSecondaryText: $color-secondary-text;
+  fontSizePrimary: $font-size-primary;
+  fontSizeSecondary: $font-size-secondary;
+}
