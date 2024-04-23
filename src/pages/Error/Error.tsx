@@ -2,17 +2,16 @@ import React, { FC } from "react";
 import H2 from "../../components/H2/H2";
 import P from "../../components/P/P";
 import { Link } from "react-router-dom";
-import { constants_routes } from "../../components/Router/Router";
+import { Constants } from "../../constants";
 
 const Error: FC = () => {
   return (
     <div id="error-page">
-      <H2 style={{ marginBottom: "5px" }}>Oops!</H2>
-      <P style={{ margin: 0 }}>
-        Sorry, but that page doesn't exist.{" "}
-        <Link to={constants_routes.home.path}>
-          Go back to the {constants_routes.home.displayName} page
-        </Link>
+      <P>
+        <b>{Constants.pages.error.m1}</b> {Constants.pages.error.m2}{" "}
+      </P>
+      <P>
+        <Link to={Constants.pages.home.path}>{Constants.pages.error.m3}</Link>
       </P>
     </div>
   );

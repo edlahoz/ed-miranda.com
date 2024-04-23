@@ -1,5 +1,5 @@
 /* eslint-disable */
-import Logo from './Logo';
+import Logo from "./Header";
 
 export default {
   title: "Logo",
@@ -8,5 +8,5 @@ export default {
 export const Default = () => <Logo />;
 
 Default.story = {
-  name: 'default',
+  name: "default",
 };

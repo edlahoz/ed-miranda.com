@@ -1,0 +1,32 @@
+@use "../../variables.module.scss";
+
+.Stat {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-gap: 0px;
+  margin-bottom: 20px;
+  .title,
+  .value {
+    word-wrap: break-word;
+  }
+  .title {
+    grid-column: span 2;
+    color: variables.$color-muted;
+  }
+  .value {
+    grid-column: span 8;
+  }
+  .buttonValue {
+    background: none;
+    color: variables.$color-secondary-text;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 0px 5px;
+    border: 1px dotted variables.$color-muted;
+    line-height: 1.2rem;
+    &:hover {
+      color: variables.$color-accent;
+      border-color: variables.$color-accent;
+    }
+  }
+}

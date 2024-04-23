@@ -3,10 +3,11 @@ import styles from "./P.module.scss";
 
 interface PProps extends React.HTMLAttributes<HTMLHeadingElement> {
   children?: React.ReactNode;
+  className?: string;
 }
 
-const P: FC<PProps> = ({ children, ...props }) => (
-  <p className={styles.P} data-testid="P" {...props}>
+const P: FC<PProps> = ({ children, className = "", ...props }) => (
+  <p className={`${styles.P} ${className}`} data-testid="P" {...props}>
     {children}
   </p>
 );

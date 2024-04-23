@@ -16,20 +16,28 @@ body,
 }
 
 html {
-  font-size: 16px;
+  font-size: variables.$font-size-base;
 }
 
 body {
   background: variables.$color-secondary;
   color: variables.$color-primary-text;
   margin: 0;
+  overflow: hidden;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 a {
-  color: inherit;
+  color: variables.$color-secondary-text;
   text-decoration: none;
   &:hover,
   &.active {
     text-decoration: underline;
+    color: variables.$color-accent;
   }
 }

@@ -2,14 +2,20 @@ $color-primary: #fff;
 $color-primary-text: #000;
 $color-secondary: #000;
 $color-secondary-text: #fff;
+$color-accent: #ff4433;
+$color-muted: #999;
 $font-size-primary: 2rem;
 $font-size-secondary: 1.5rem;
+$font-size-base: 16px;
 
 :export {
   colorPrimary: $color-primary;
   colorPrimaryText: $color-primary-text;
   colorSecondary: $color-secondary;
   colorSecondaryText: $color-secondary-text;
+  colorAccent: $color-accent;
+  colorMuted: $color-muted;
   fontSizePrimary: $font-size-primary;
   fontSizeSecondary: $font-size-secondary;
+  fontSizeBase: $font-size-base;
 }

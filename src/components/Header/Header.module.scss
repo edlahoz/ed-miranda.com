@@ -1,0 +1,17 @@
+@use "../../variables.module.scss";
+
+.Header {
+  .button-menu {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+    &:hover svg path,
+    &.active svg path {
+      fill: variables.$color-accent;
+    }
+  }
+  h2 {
+    font-size: variables.$font-size-base;
+  }
+}

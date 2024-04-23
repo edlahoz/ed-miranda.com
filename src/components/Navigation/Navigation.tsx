@@ -1,14 +1,15 @@
 import React, { FC } from "react";
 import styles from "./Navigation.module.scss";
 import { NavLink } from "react-router-dom";
-import { constants_routes } from "../Router/Router";
+import { Constants } from "../../constants";
 
 const Navigation: FC = () => {
-  const routes = Object.keys(constants_routes)
+  const routes = Object.keys(Constants.pages)
     .map((routeNode) => ({
       id: routeNode,
-      ...constants_routes[routeNode as keyof typeof constants_routes],
+      ...(Constants.pages as { [key: string]: any })[routeNode],
     }))
+    .filter((route) => route.includeInMenu)
     .map((route) => (
       <li key={route.id}>
         <NavLink to={route.path}>{route.displayName}</NavLink>
@@ -16,9 +17,9 @@ const Navigation: FC = () => {
     ));
 
   return (
-    <ul className={styles.Navigation} data-testid="Navigation">
-      {routes}
-    </ul>
+    <nav className={styles.Navigation}>
+      <ul data-testid="Navigation">{routes}</ul>
+    </nav>
   );
 };
 

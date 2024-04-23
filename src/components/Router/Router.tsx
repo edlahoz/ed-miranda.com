@@ -10,54 +10,36 @@ import Blog from "../../pages/Blog/Blog";
 import Contact from "../../pages/Contact/Contact";
 import Error from "../../pages/Error/Error";
 import App from "../App/App";
-
-const constants_routes = {
-  home: {
-    displayName: "Home",
-    path: "/home",
-  },
-  projects: {
-    displayName: "Projects",
-    path: "/projects",
-  },
-  blog: {
-    displayName: "Blog",
-    path: "/blog",
-  },
-  contact: {
-    displayName: "Contact",
-    path: "/contact",
-  },
-};
+import { Constants } from "../../constants";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-    errorElement: <Navigate to={"/error"} />,
+    errorElement: <Navigate to={Constants.pages.error.path} />,
     children: [
       {
         index: true,
-        element: <Navigate to={constants_routes.home.path} replace />,
+        element: <Navigate to={Constants.pages.home.path} replace />,
       },
       {
-        path: constants_routes.home.path,
+        path: Constants.pages.home.path,
         element: <Home />,
       },
       {
-        path: constants_routes.projects.path,
+        path: Constants.pages.projects.path,
         element: <Projects />,
       },
       {
-        path: constants_routes.blog.path,
+        path: Constants.pages.blog.path,
         element: <Blog />,
       },
       {
-        path: constants_routes.contact.path,
+        path: Constants.pages.contact.path,
         element: <Contact />,
       },
       {
-        path: "/error",
+        path: Constants.pages.error.path,
         element: <Error />,
       },
     ],
@@ -66,4 +48,4 @@ const router = createBrowserRouter([
 
 const Router: FC = () => <RouterProvider router={router} />;
 
-export { Router as default, constants_routes };
+export default Router;

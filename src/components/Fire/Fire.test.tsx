@@ -1,14 +1,14 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
-import Logo from './Logo';
+import Fire from './Fire';
 
-describe('<Logo />', () => {
+describe('<Fire />', () => {
   test('it should mount', () => {
-    render(<Logo />);
+    render(<Fire />);
     
-    const logo = screen.getByTestId('Logo');
+    const fire = screen.getByTestId('Fire');
 
-    expect(logo).toBeInTheDocument();
+    expect(fire).toBeInTheDocument();
   });
 });
