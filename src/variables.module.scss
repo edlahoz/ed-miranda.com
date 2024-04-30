@@ -4,8 +4,10 @@ $color-secondary: #000;
 $color-secondary-text: #fff;
 $color-accent: #ff4433;
 $color-muted: #999;
+$color-terminal: #00ff00;
 $font-size-primary: 2rem;
 $font-size-secondary: 1.5rem;
+$font-size-tertiary: 1.2rem;
 $font-size-base: 16px;
 
 :export {
@@ -15,7 +17,9 @@ $font-size-base: 16px;
   colorSecondaryText: $color-secondary-text;
   colorAccent: $color-accent;
   colorMuted: $color-muted;
+  colorTerminal: $color-terminal;
   fontSizePrimary: $font-size-primary;
   fontSizeSecondary: $font-size-secondary;
+  fontSizeTertiary: $font-size-tertiary;
   fontSizeBase: $font-size-base;
 }

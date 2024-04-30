@@ -1,0 +1,9 @@
+@use "../../variables.module.scss";
+
+.Clock {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: variables.$color-primary-text;
+}

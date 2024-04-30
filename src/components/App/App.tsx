@@ -17,8 +17,9 @@ function App() {
         <Content
           style={{
             background: variables.colorSecondary,
-            color: variables.colorSecondaryText,
+            color: variables.colorTerminal,
             padding: "20px",
+            fontFamily: "monospace",
           }}
           className="outlet"
         >

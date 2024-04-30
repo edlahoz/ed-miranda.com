@@ -26,6 +26,13 @@ body {
   overflow: hidden;
 }
 
+h1,
+h2,
+h3,
+p {
+  line-height: 1.5rem;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -40,4 +47,8 @@ a {
     text-decoration: underline;
     color: variables.$color-accent;
   }
+}
+
+.mb-10 {
+  margin-bottom: 10px;
 }

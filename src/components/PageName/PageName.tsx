@@ -3,6 +3,7 @@ import styles from "./PageName.module.scss";
 import H2 from "../H2/H2";
 import { useLocation } from "react-router-dom";
 import { Constants } from "../../constants";
+import { Page } from "../../types";
 
 const PageName: FC = () => {
   const location = useLocation();
@@ -11,8 +12,10 @@ const PageName: FC = () => {
     const page = Constants.pages[key as keyof typeof Constants.pages];
     return page.path === path;
   });
-  const page = Constants.pages[targetPage as keyof typeof Constants.pages];
+  const page: Page =
+    Constants.pages[targetPage as keyof typeof Constants.pages];
 
+  if (page.hideNameInHeader) return null;
   return (
     <H2 className={styles.PageName} data-testid="PageName">
       {page.displayName}

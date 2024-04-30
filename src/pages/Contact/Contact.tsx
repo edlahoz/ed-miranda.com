@@ -7,7 +7,7 @@ const Contact: FC = () => (
   <ul className={styles.Contact} data-testid="Contact">
     {Constants.pages.contact.links.map((link) => (
       <li key={link.title}>
-        <Stat title={link.title} value={link.value} encoded={link.encoded} />
+        <Stat {...link} />
       </li>
     ))}
   </ul>
