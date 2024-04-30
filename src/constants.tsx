@@ -212,12 +212,12 @@ export namespace Constants {
     projects: {
       displayName: "Projects",
       path: "/projects",
-      includeInMenu: true,
+      includeInMenu: false,
     },
     blog: {
       displayName: "Blog",
       path: "/blog",
-      includeInMenu: true,
+      includeInMenu: false,
     },
     contact: {
       displayName: "Contact",
