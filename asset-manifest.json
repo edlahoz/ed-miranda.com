@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/ed-miranda.com/static/css/main.36cab7bd.css",
-    "main.js": "/ed-miranda.com/static/js/main.af4c9e1f.js",
+    "main.js": "/ed-miranda.com/static/js/main.68541e0d.js",
     "static/js/453.19004870.chunk.js": "/ed-miranda.com/static/js/453.19004870.chunk.js",
     "index.html": "/ed-miranda.com/index.html",
     "main.36cab7bd.css.map": "/ed-miranda.com/static/css/main.36cab7bd.css.map",
-    "main.af4c9e1f.js.map": "/ed-miranda.com/static/js/main.af4c9e1f.js.map",
+    "main.68541e0d.js.map": "/ed-miranda.com/static/js/main.68541e0d.js.map",
     "453.19004870.chunk.js.map": "/ed-miranda.com/static/js/453.19004870.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.36cab7bd.css",
-    "static/js/main.af4c9e1f.js"
+    "static/js/main.68541e0d.js"
   ]
 }
