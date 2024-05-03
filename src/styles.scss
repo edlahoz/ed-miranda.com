@@ -1,6 +1,20 @@
 @use "variables.module";
 @import "normalize.css";
 
+@mixin dots($count) {
+  $text-shadow: ();
+  @for $i from 0 through $count {
+    $text-shadow: $text-shadow,
+      (-0.5+ (random()) * 3) +
+        em
+        (-0.5+ (random()) * 3) +
+        em
+        7px
+        hsla(random() * 360, 100%, 50%, 0.9);
+  }
+  text-shadow: $text-shadow;
+}
+
 :root {
   font-family: Inter, sans-serif;
   font-feature-settings: "liga" 1, "calt" 1;
@@ -51,4 +65,11 @@ a {
 
 .mb-10 {
   margin-bottom: 10px;
+}
+
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
 }

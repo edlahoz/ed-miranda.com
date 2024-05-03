@@ -7,4 +7,10 @@
   padding: 10px;
   overflow-y: auto;
   background: variables.$color-primary;
+  @media print {
+    background: white !important;
+    color: black !important;
+    overflow: visible;
+    padding: 0;
+  }
 }

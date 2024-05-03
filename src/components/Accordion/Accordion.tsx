@@ -25,13 +25,15 @@ const Accordion: FC<AccordionProps> = ({ items }) => {
   }, [items]);
 
   const activeIcon = (index: number) => (
-    <span className={styles.icon}>{activeIndex === index ? "▼" : "-"}</span>
+    <span onClick={() => handleClick(index)} className={styles.icon}>
+      {activeIndex === index ? "▼" : "-"}
+    </span>
   );
 
   return (
-    <div className={styles.Accordion} data-testid="Accordion">
+    <ul className={styles.Accordion} data-testid="Accordion">
       {items.map((item, index) => (
-        <div key={index} className={styles["accordion-item"]}>
+        <li key={index} className={styles["accordion-item"]}>
           {activeIcon(index)}
           <H3
             className={`${styles["accordion-title"]} ${
@@ -48,9 +50,9 @@ const Accordion: FC<AccordionProps> = ({ items }) => {
           >
             {item.content}
           </div>
-        </div>
+        </li>
       ))}
-    </div>
+    </ul>
   );
 };
 

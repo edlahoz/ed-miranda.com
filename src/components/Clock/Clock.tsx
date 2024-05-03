@@ -20,14 +20,45 @@ const Clock: FC<ClockProps> = () => {
 
   function getCurrentTime() {
     const date = new Date();
-    const hours = formatTimeUnit(date.getHours());
+    const dayOfWeek = getDayName(date.getDay());
+    const day = formatTimeUnit(date.getDate());
+    const month = getMonthName(date.getMonth());
+    const { hours12, period } = get12HourTime(date.getHours());
     const minutes = formatTimeUnit(date.getMinutes());
-    const seconds = formatTimeUnit(date.getSeconds());
-    return `${hours}:${minutes}:${seconds}`;
+    return `${dayOfWeek} ${month} ${day} ${hours12}:${minutes} ${period}`;
   }
 
   function formatTimeUnit(unit: number) {
-    return unit < 10 ? "0" + unit : unit;
+    return unit.toString().padStart(2, "0");
+  }
+
+  function getMonthName(month: number) {
+    const monthNames = [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec",
+    ];
+    return monthNames[month];
+  }
+
+  function getDayName(day: number) {
+    const dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+    return dayNames[day];
+  }
+
+  function get12HourTime(hours: number) {
+    const period = hours >= 12 ? "PM" : "AM";
+    const hours12 = hours % 12 || 12;
+    return { hours12, period };
   }
 
   return (

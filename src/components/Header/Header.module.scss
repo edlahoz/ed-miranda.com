@@ -1,6 +1,7 @@
 @use "../../variables.module.scss";
 
 .Header {
+  color: variables.$color-primary-text;
   .button-menu {
     border: none;
     background: none;
@@ -13,5 +14,8 @@
   }
   h2 {
     font-size: variables.$font-size-base;
+  }
+  @media print {
+    padding: 20px;
   }
 }

@@ -1,20 +1,41 @@
 @use "../../variables.module.scss";
 
 .Accordion {
-  .accordion-title {
+  display: flex;
+  flex-direction: column;
+  li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+  .accordion-title,
+  .icon {
     display: inline-block;
     cursor: pointer;
-    transition: color 0.3s ease;
   }
   .accordion-content {
     padding-left: 20px;
     display: none;
+    transition: display 0.3s ease; // Add transition for smooth animation
   }
   .icon {
-    display: inline-block;
     width: 20px;
   }
   .accordion-content.open {
     display: block;
+  }
+  @media print {
+    .accordion-title {
+      font-weight: bold;
+      text-transform: uppercase;
+      text-decoration: underline;
+      letter-spacing: 2px;
+    }
+    .icon {
+      display: none;
+    }
+    .accordion-content {
+      display: block;
+      padding-left: 0;
+    }
   }
 }

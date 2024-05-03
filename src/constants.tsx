@@ -49,14 +49,16 @@ export namespace Constants {
           content: (
             <div className="mb-10">
               <P>
-                In the 90s, my brother and I started to make boot disks to run
-                Duke Nukem in our 386 computer. Then MySpace came into the scene
-                I learned HTML, CSS, and JS to make my profile pop. I kept on
-                learning until I found myself becoming a Frontend Engineer for
-                the first time towards my later 20s. Before landing my first
-                corporate job I had already built several websites and apps for
-                different clients as a freelancer (it was here I learned the
-                importance of type=“submit” and the intricacies of semicolons)
+                In the '90s, my brother and I began creating boot disks to run
+                Duke Nukem on our 386 computer. Then MySpace entered the scene,
+                and I delved into learning HTML, CSS, and JS to enhance my
+                profile. I continued to expand my knowledge until I eventually
+                transitioned into a Frontend Engineer role in my mid 20s. Prior
+                to securing my initial corporate position, I had already
+                developed numerous websites and applications for various clients
+                as a freelancer. It was during this time that I gained insight
+                into the significance of type="submit" and mastered the
+                subtleties of semicolons.
               </P>
             </div>
           ),
@@ -67,8 +69,8 @@ export namespace Constants {
           content: (
             <>
               <P>
-                A few of the most used tools and languages (you'll see more in
-                the Experience section, but these are the main ones):
+                Most used tools in my toolbox (though you'll find a more
+                comprehensive list in the Experience section next):
               </P>
               <ul className="mb-10">
                 <li>
@@ -117,7 +119,7 @@ export namespace Constants {
                   <Stat
                     title="2022 - 2024 / BlackRock"
                     subtitle="Engineering Manager"
-                    value="Managed a team of engineers to develop portfolio analysis tooling for customers. Collaborated closely with Client teams to ensure all requirements were met. Managed time, resources, and prioritizations. Regular standups, scrum, and retrospectives."
+                    value="Led a team of engineers in developing portfolio analysis tools for clients. Collaborated closely with client teams to ensure all project requirements were addressed. Managed time, resources, and prioritizations effectively. Conducted regular standups, scrum meetings, and retrospectives to ensure project progress and team alignment."
                     type="column"
                     pills={[
                       "Recoil",
@@ -132,7 +134,7 @@ export namespace Constants {
                   <Stat
                     title="2016 - 2022 / Deloitte"
                     subtitle="Senior and Lead Frontend Developer"
-                    value="Numerous consulting engagements in the Healthcare, Human Capital, and Financial sectors. Developed several COVID-19 related applications during critical times in the pandemic. One the biggest product accomplishments as Lead Frontend Engineer was the product selling for a high eight figure amount."
+                    value="Engaged in multiple consulting projects spanning the Healthcare, Human Capital, and Financial sectors. Notably, contributed to the development of several COVID-19-related applications during pivotal moments in the pandemic. As Lead Frontend Engineer, spearheaded a product that achieved a remarkable sale for a high eight-figure sum, marking a significant accomplishment."
                     type="column"
                     pills={[
                       "Angular",
@@ -155,7 +157,7 @@ export namespace Constants {
                   <Stat
                     title="2013 - 2016 / Cumulus Media Group"
                     subtitle="Web Developer"
-                    value="Worked on internal legacy revamp engagements to assist in Sales. Helped design and build several radio station websites, most notably for the renowned Westwood One radio station group."
+                    value="Contributed to internal legacy revamp projects aimed at enhancing sales processes. Played a key role in designing and developing multiple radio station websites, with notable projects including those for the prestigious Westwood One radio station group."
                     type="column"
                     pills={[
                       "C#",
@@ -173,7 +175,7 @@ export namespace Constants {
                   <Stat
                     title="2012 - 2013 / Cornerstone Media"
                     subtitle="Junior Web Developer"
-                    value="Part of a very small dev group where we built sites for small to medium businesses. Played key roles in design, user experience, and frontend engineering"
+                    value="Part of a compact development team responsible for constructing websites tailored to small to medium-sized businesses. Held pivotal responsibilities in design, user experience, and frontend engineering."
                     type="column"
                     pills={[
                       "jQuery",
@@ -195,14 +197,23 @@ export namespace Constants {
           content: (
             <div className="mb-10">
               <P>
-                Outside of coding, you'll often find me running the pavements or
-                trails. I believe in maintaining a healthy work-life balance,
-                and running helps me clear my mind, stay focused, and is also
-                frequently the space where I will find solutions to challenges
-                in my day to day. My brother and I are big hot sauce peeps, so
-                we decided to sell hot sauce one day and launched a kickstarter
-                for it! We had people try raw ghost pepper for the kickstarter
-                video.
+                Beyond coding, you'll often find me pounding the pavements or
+                exploring trails. I prioritize maintaining a healthy work-life
+                balance, and running serves as my go-to activity for clearing my
+                mind, staying focused, and often finding solutions to daily
+                challenges. Additionally, my brother and I share a passion for
+                hot sauce, leading us to venture into the world of
+                entrepreneurship. We decided to sell our own hot sauce and
+                launched a{" "}
+                <a
+                  href="https://www.kickstarter.com/projects/sumbich/sumbich-hot-sauce"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Kickstarter campaign
+                </a>{" "}
+                for it! As part of our promotional video, we even had folks
+                brave the raw heat of ghost peppers.
               </P>
             </div>
           ),

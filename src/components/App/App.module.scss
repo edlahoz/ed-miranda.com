@@ -1,4 +1,96 @@
+@use "../../variables.module.scss";
+
+@mixin dots($count) {
+  $text-shadow: ();
+  @for $i from 0 through $count {
+    $text-shadow: $text-shadow,
+      (-0.5+ (random()) * 3) +
+        em
+        (-0.5+ (random()) * 3) +
+        em
+        50px
+        hsla(random() * 360, 100%, 50%, 0.9);
+  }
+  text-shadow: $text-shadow;
+}
+
 .App {
   height: 100%;
   display: flex;
+  .sidebar {
+    background: variables.$color-primary-text;
+    flex: 0.382;
+    border: 0;
+    padding: 0;
+    border-radius: 0;
+    @media print {
+      display: none;
+    }
+  }
+  .leftbar {
+    color: transparent;
+    font-size: 4.5rem;
+    overflow: hidden;
+    .content {
+      background: variables.$color-secondary;
+      color: variables.$color-terminal;
+      padding: 20px;
+      font-family: monospace;
+    }
+    @media print {
+      overflow: visible;
+    }
+  }
+
+  .leftbar::before,
+  .leftbar::after,
+  .content::before,
+  .content::after {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 4em;
+    height: 4em;
+    content: ".";
+    mix-blend-mode: screen;
+    animation: 44s -27s move infinite ease-in-out alternate;
+    pointer-events: none;
+    @media print {
+      display: none;
+      position: relative;
+    }
+  }
+
+  .content::before {
+    @include dots(40);
+    animation-duration: 44s;
+    animation-delay: -27s;
+  }
+
+  .content::after {
+    @include dots(40);
+    animation-duration: 43s;
+    animation-delay: -32s;
+  }
+
+  .leftbar::before {
+    @include dots(40);
+    animation-duration: 42s;
+    animation-delay: -23s;
+  }
+
+  .leftbar::after {
+    @include dots(40);
+    animation-duration: 41s;
+    animation-delay: -19s;
+  }
+
+  @keyframes move {
+    from {
+      transform: rotate(0deg) scale(12) translateX(-20px);
+    }
+    to {
+      transform: rotate(360deg) scale(18) translateX(20px);
+    }
+  }
 }
