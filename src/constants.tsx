@@ -42,7 +42,7 @@ export namespace Constants {
       includeInMenu: true,
       hideNameInHeader: true,
       m1: "Hey there!",
-      m2: `I'm Ed Miranda, and I build snappy, fun, and engaging user experiences in the web.`,
+      m2: `I'm Ed Miranda. I build snappy, fun, and engaging user experiences in the web.`,
       accordionItems: [
         {
           title: "Background",
