@@ -32,6 +32,19 @@
         background-color: variables.$color-accent;
         color: variables.$color-secondary-text;
       }
+      li span {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: variables.$color-accent;
+        a {
+          display: inline-block;
+        }
+        svg {
+          background: variables.$color-secondary-text;
+          border-radius: 15px;
+        }
+      }
     }
   }
 }

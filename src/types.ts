@@ -4,6 +4,7 @@ type Page = {
   includeInMenu?: boolean;
   hideNameInHeader?: boolean;
   links?: PageLink[];
+  isExternal?: boolean;
 };
 
 type PageLink = {

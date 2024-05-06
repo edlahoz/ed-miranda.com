@@ -241,6 +241,12 @@ export namespace Constants {
       path: "/blog",
       includeInMenu: false,
     },
+    resume: {
+      displayName: "Resume",
+      path: "/Resume-Ed-Miranda.pdf",
+      isExternal: true,
+      includeInMenu: true,
+    },
     contact: {
       displayName: "Contact",
       path: "/contact",
