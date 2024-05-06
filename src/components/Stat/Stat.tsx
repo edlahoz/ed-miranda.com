@@ -2,6 +2,7 @@ import React, { FC, useState } from "react";
 import styles from "./Stat.module.scss";
 import P from "../P/P";
 import H4 from "../H4/H4";
+import Link from "../Link/Link";
 
 type StatProps = {
   title: string;
@@ -13,44 +14,13 @@ type StatProps = {
   pills?: string[];
 };
 
-const ArrowIcon = () => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24"
-    width="16"
-    height="16"
-    fill="#ff4433"
-    transform="rotate(-90)"
-  >
-    <circle
-      cx="12"
-      cy="12"
-      r="11"
-      fill="none"
-      stroke="#ff4433"
-      strokeWidth="2"
-    />
-    <line x1="16" y1="8" x2="8" y2="16" stroke="#ff4433" strokeWidth="2" />
-    <line x1="16" y1="8" x2="16" y2="16" stroke="#ff4433" strokeWidth="2" />
-    <line x1="16" y1="16" x2="8" y2="16" stroke="#ff4433" strokeWidth="2" />
-  </svg>
-);
-
 function ValueTemplate({ value, title, isLink, encoded }: StatProps) {
   if (!isLink) {
     return <>{value}</>;
   }
   return (
     <>
-      <a
-        href={!encoded ? value : "mailto:" + value}
-        title={title}
-        target="_blank"
-        rel="noreferrer"
-      >
-        {value}
-      </a>{" "}
-      <ArrowIcon />
+      <Link href={!encoded ? value : "mailto:" + value} title={value} />
     </>
   );
 }

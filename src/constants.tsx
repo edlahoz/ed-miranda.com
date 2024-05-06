@@ -1,6 +1,7 @@
 import P from "./components/P/P";
 import Stat from "./components/Stat/Stat";
 import variables from "./variables.module.scss";
+import Link from "./components/Link/Link";
 
 export namespace Constants {
   export const header = {
@@ -8,29 +9,23 @@ export namespace Constants {
     subtitle: (
       <span>
         Web Developer,{" "}
-        <a
+        <Link
           href="https://www.strava.com/athletes/45691518"
-          target="_blank"
-          rel="noreferrer"
+          title="Runner"
           style={{
             color: variables.colorPrimaryText,
             textDecoration: "underline",
           }}
-        >
-          Runner
-        </a>
+        />{" "}
         , and{" "}
-        <a
+        <Link
           href="https://sumbich.com"
-          target="_blank"
-          rel="noreferrer"
+          title="Hot Sauce Enthusiast"
           style={{
             color: variables.colorPrimaryText,
             textDecoration: "underline",
           }}
-        >
-          Hot Sauce Enthusiast
-        </a>
+        />{" "}
       </span>
     ),
   };
@@ -42,23 +37,42 @@ export namespace Constants {
       includeInMenu: true,
       hideNameInHeader: true,
       m1: "Hey there!",
-      m2: `I'm Ed Miranda. I build snappy, fun, and engaging user experiences in the web.`,
+      m2: (
+        <>
+          I'm Ed Miranda. I build snappy, fun, and engaging user experiences in
+          the web. If you see something here that piques your interest, you can
+          find the{" "}
+          <Link
+            href="https://github.com/edlahoz/ed-miranda.com"
+            title="source code"
+          />{" "}
+          in my github.
+        </>
+      ),
       accordionItems: [
         {
           title: "Background",
           content: (
             <div className="mb-10">
               <P>
-                In the '90s, my brother and I began creating boot disks to run
-                Duke Nukem on our 386 computer. Then MySpace entered the scene,
-                and I delved into learning HTML, CSS, and JS to enhance my
-                profile. I continued to expand my knowledge until I eventually
-                transitioned into a Frontend Engineer role in my mid 20s. Prior
-                to securing my initial corporate position, I had already
-                developed numerous websites and applications for various clients
-                as a freelancer. It was during this time that I gained insight
-                into the significance of type="submit" and mastered the
-                subtleties of semicolons.
+                In the '90s, my brother and I began creating boot disks to run{" "}
+                <Link
+                  title="Duke Nukem"
+                  href="https://en.wikipedia.org/wiki/Duke_Nukem_(video_game)"
+                />{" "}
+                on our{" "}
+                <Link
+                  href="https://en.wikipedia.org/wiki/I386"
+                  title="386 computer"
+                />
+                . Then MySpace entered the scene, and I delved into learning
+                HTML, CSS, and JS to enhance my profile. I continued to expand
+                my knowledge until I eventually transitioned into a Frontend
+                Engineer role in my mid 20s. Prior to securing my initial
+                corporate position, I had already developed numerous websites
+                and applications for various clients as a freelancer. It was
+                during this time that I gained insight into the significance of
+                type="submit" and mastered the subtleties of semicolons.
               </P>
             </div>
           ),
@@ -205,13 +219,10 @@ export namespace Constants {
                 hot sauce, leading us to venture into the world of
                 entrepreneurship. We decided to sell our own hot sauce and
                 launched a{" "}
-                <a
+                <Link
                   href="https://www.kickstarter.com/projects/sumbich/sumbich-hot-sauce"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Kickstarter campaign
-                </a>{" "}
+                  title="Kickstarter campaign"
+                />{" "}
                 for it! As part of our promotional video, we even had folks
                 brave the raw heat of ghost peppers.
               </P>
