@@ -1,4 +1,5 @@
 import React, { FC } from "react";
+import variables from "../../variables.module.scss";
 
 const ArrowIcon = () => (
   <svg
@@ -6,7 +7,7 @@ const ArrowIcon = () => (
     viewBox="0 0 24 24"
     width="16"
     height="16"
-    fill="#ff4433"
+    fill={variables.colorAccent}
     transform="rotate(-90)"
   >
     <circle
@@ -14,12 +15,33 @@ const ArrowIcon = () => (
       cy="12"
       r="11"
       fill="none"
-      stroke="#ff4433"
+      stroke={variables.colorAccent}
       strokeWidth="2"
     />
-    <line x1="16" y1="8" x2="8" y2="16" stroke="#ff4433" strokeWidth="2" />
-    <line x1="16" y1="8" x2="16" y2="16" stroke="#ff4433" strokeWidth="2" />
-    <line x1="16" y1="16" x2="8" y2="16" stroke="#ff4433" strokeWidth="2" />
+    <line
+      x1="16"
+      y1="8"
+      x2="8"
+      y2="16"
+      stroke={variables.colorAccent}
+      strokeWidth="2"
+    />
+    <line
+      x1="16"
+      y1="8"
+      x2="16"
+      y2="16"
+      stroke={variables.colorAccent}
+      strokeWidth="2"
+    />
+    <line
+      x1="16"
+      y1="16"
+      x2="8"
+      y2="16"
+      stroke={variables.colorAccent}
+      strokeWidth="2"
+    />
   </svg>
 );
 

@@ -40,13 +40,24 @@ export namespace Constants {
       m2: (
         <>
           I'm Ed Miranda. I build snappy, fun, and engaging user experiences in
-          the web. If you see something here that piques your interest, you can
-          find the{" "}
-          <Link
-            href="https://github.com/edlahoz/ed-miranda.com"
-            title="source code"
-          />{" "}
-          in my github.
+          find the the web.
+          <p>
+            Currently playing with{" "}
+            <Link href="https://nextjs.org/" title="Next.js" />,{" "}
+            <Link href="https://expo.dev/" title="Expo" />, and{" "}
+            <Link
+              href="https://react.dev/reference/rsc/server-components"
+              title="RSCs"
+            />
+            .
+          </p>{" "}
+          <p>
+            <Link
+              href="https://github.com/edlahoz/ed-miranda.com"
+              title="Source code"
+            />{" "}
+            for this website.
+          </p>
         </>
       ),
       accordionItems: [
