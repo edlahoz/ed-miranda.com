@@ -39,8 +39,8 @@ export namespace Constants {
       m1: "Hey there!",
       m2: (
         <>
-          I'm Ed Miranda. I build snappy, fun, and engaging user experiences in
-          find the the web.
+          I'm Ed Miranda. I build snappy, fun, and engaging experiences in the
+          frontend.
           <p>
             Currently playing with{" "}
             <Link href="https://nextjs.org/" title="Next.js" />,{" "}
