@@ -42,7 +42,7 @@ export namespace Constants {
           I'm Ed Miranda. I build snappy, fun, and engaging experiences in the
           frontend.
           <p>
-            Currently playing with{" "}
+            Currently building with{" "}
             <Link href="https://nextjs.org/" title="Next.js" />,{" "}
             <Link href="https://expo.dev/" title="Expo" />, and{" "}
             <Link
