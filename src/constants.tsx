@@ -19,7 +19,7 @@ export namespace Constants {
         />{" "}
         , and{" "}
         <Link
-          href="https://sumbich.com"
+          href="https://www.kickstarter.com/projects/sumbich/sumbich-hot-sauce"
           title="Hot Sauce Enthusiast"
           style={{
             color: variables.colorPrimaryText,
