@@ -45,11 +45,7 @@ export namespace Constants {
             Currently building with{" "}
             <Link href="https://nextjs.org/" title="Next.js" />,{" "}
             <Link href="https://expo.dev/" title="Expo" />, and{" "}
-            <Link
-              href="https://react.dev/reference/rsc/server-components"
-              title="RSCs"
-            />
-            .
+            <Link href="https://graphql.org/" title="GraphQL" />.
           </p>{" "}
           <p>
             <Link
@@ -100,27 +96,18 @@ export namespace Constants {
               <ul className="mb-10">
                 <li>
                   <Stat
-                    title="Languages"
-                    value="Typescript, Javascript, Node"
+                    title="Frontend"
+                    value="Typescript, React, Next.js, Expo, Redux, Jotai"
                   />
-                </li>
-                <li>
-                  <Stat title="Libraries" value="React.js, Vue.js, Lightning" />
                 </li>
                 <li>
                   <Stat
-                    title="Frameworks"
-                    value="Wordpress, Magento, Shopify"
+                    title="Backend"
+                    value="Node, GraphQL, Express, Prisma"
                   />
                 </li>
                 <li>
-                  <Stat title="Tools" value="Git, Webpack, NPM, SCSS" />
-                </li>
-                <li>
-                  <Stat title="CI/CD" value="OpenShift, Azure, AWS, Jenkins" />
-                </li>
-                <li>
-                  <Stat title="Storage" value="Postgres, Mongo, Aurora" />
+                  <Stat title="Data" value="Postgres, Mongo" />
                 </li>
                 <li>
                   <Stat title="Design" value="Figma, Sketch, Photoshop" />
@@ -134,16 +121,15 @@ export namespace Constants {
           content: (
             <>
               <P>
-                At least 12 years (getting old!) of experience working in the
-                software industry, where I've had the opportunity to work on a
-                diverse range of projects. Some highlights of my experience
-                include:
+                At least 12 years of experience working in the software
+                industry, where I've had the opportunity to work on a diverse
+                range of projects. Some highlights of my experience include:
               </P>
               <ul className="mb-10">
                 <li>
                   <Stat
                     title="2022 - 2024 / BlackRock"
-                    subtitle="Engineering Manager"
+                    subtitle="Staff Frontend Engineer"
                     value="Led a team of engineers in developing portfolio analysis tools for clients. Collaborated closely with client teams to ensure all project requirements were addressed. Managed time, resources, and prioritizations effectively. Conducted regular standups, scrum meetings, and retrospectives to ensure project progress and team alignment."
                     type="column"
                     pills={[
@@ -181,7 +167,7 @@ export namespace Constants {
                 <li>
                   <Stat
                     title="2013 - 2016 / Cumulus Media Group"
-                    subtitle="Web Developer"
+                    subtitle="Frontend Developer"
                     value="Contributed to internal legacy revamp projects aimed at enhancing sales processes. Played a key role in designing and developing multiple radio station websites, with notable projects including those for the prestigious Westwood One radio station group."
                     type="column"
                     pills={[
